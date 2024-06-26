@@ -17,6 +17,6 @@ public class TS_SQLGroup {
             return "";
         }
         TS_SQLSanitizeUtils.sanitize(columnNames);
-        return TGS_StringUtils.concat("GROUP BY ", TGS_StringUtils.toString(columnNames, ","));
+        return TGS_StringUtils.cmn().concat("GROUP BY ", TGS_StringUtils.cmn().toString(columnNames, ","));
     }
 }
